@@ -11,8 +11,7 @@ import java.util.List;
 
 @SuppressWarnings("JpaQlInspection")
 public class UserDaoHibernateImpl implements UserDao {
-    Transaction tx;
-    User user;
+    private static Transaction tx;
 
     @Override
     public void createUsersTable() {
